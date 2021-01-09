@@ -78,7 +78,7 @@ while run:
         row = '2'
 
         # Asks user for number of rows they wish to create
-        row_input = st.number_input('How many rows do you need?: ', key = 'row_input_1')
+        row_input = st.number_input('How many rows do you need?(please enter a whole number): ', key = 'row_input_1')
         rows = int(row_input)
 
         information = collect_data(rows)
@@ -103,7 +103,7 @@ while run:
         if wb:
             page = wb.active
 
-            row_input = st.number_input('How many rows do you need?: ', key = 'row-input_2')
+            row_input = st.number_input('How many rows do you need?(please enter a whole number): ', key = 'row-input_2')
             rows = int(row_input)
 
             update_file = collect_data(rows)
